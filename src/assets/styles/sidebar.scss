@@ -1,0 +1,26 @@
+.sidebar {
+    width: 15%;
+    background-color: rgb(112, 136, 136);
+    cursor: pointer;
+    .sidebar-item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 3rem;
+        align-items: center;
+        border-bottom: 1px solid palegoldenrod;
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: aliceblue;
+
+            &.active {
+                background-color: rgb(88, 96, 46);
+            }
+        }
+    }
+}

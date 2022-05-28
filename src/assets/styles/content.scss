@@ -1,0 +1,17 @@
+.content {
+    max-width: 75%;
+    .cats {
+        overflow-y: scroll;
+        .cat {
+            display: inline-block;
+        }
+    }
+
+    .load-more {
+        margin: 2rem auto;
+        width: 6rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+}

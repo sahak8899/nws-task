@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./containers/header";
+import Layout from "./containers/layout";
+import { ToastContainer } from 'react-toastify';
+import { useEffect } from "react";
+import AppController from "./controllers/app";
+import RouteBuilder from './routes/index';
 
 function App() {
+  useEffect(() => {
+    AppController.getCategoriesData()
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Layout/>
+      <RouteBuilder/>
+      <ToastContainer/>
     </div>
   );
 }
